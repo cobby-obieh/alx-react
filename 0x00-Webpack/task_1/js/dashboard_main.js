@@ -1,3 +1,4 @@
+'use strict';
 import $ from 'jquery';
 import _ from 'lodash';
 
@@ -8,10 +9,10 @@ $('body').append('<p id="count"></p>');
 $('body').append('<p>Copyright - Holberton School</p>');
 
 const updateCounter = () => {
-  let count = $('#count').html() || 0;
+  let counts = $('#count').html() || 0;
   $('button').on('click', () => {
-    count++;
-    $('#count').html(`${count} clicks on the button`);
+    counts++;
+    $('#count').html(`${counts} clicks on the button`);
   });
 };
 
